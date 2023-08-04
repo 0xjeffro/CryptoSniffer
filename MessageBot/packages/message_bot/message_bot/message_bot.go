@@ -31,3 +31,8 @@ func Main(args map[string]interface{}) map[string]interface{} {
 	rsp["body"] = err
 	return rsp
 }
+
+// comment out this function if you want to run this function locally
+//func main() {
+//	Main(map[string]interface{}{"message": "Hello, World!"})
+//}
