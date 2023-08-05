@@ -27,7 +27,7 @@ doctl serverless connect crypto-sniffer-bot
 **Initialize a Sample Function (Optional)**: 
 
 ```bash
-doctl serverless init --language go function-name
+doctl serverless init --language go project-name
 ```
 
 
@@ -39,4 +39,20 @@ doctl serverless deploy project-name --remote-build
 ```
 
 
+
+## ScheduledFunctions
+
+### dexscreener chains
+
+parameters
+
+```
+{}
+```
+
+environment variables:
+
+- mongoURI: mongoDB URI
+- msgBotAPI: API link of msgBot
+- flareSolverrAPI: API link of [flareSolverr](https://github.com/FlareSolverr/FlareSolverr) , this is a service based on https://hub.docker.com/r/flaresolverr/flaresolverr, aiming to bypass the cloudflare 5 second challenge.
 

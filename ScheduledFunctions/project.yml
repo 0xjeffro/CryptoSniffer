@@ -1,0 +1,19 @@
+parameters: {}
+packages:
+    - name: dexscreener
+      shared: false
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: dexscreener_chains
+          binary: false
+          main: ""
+          runtime: python:default
+          web: true
+          webSecure: false
+          parameters: {}
+          annotations: {}
+          limits: {
+            memory: 512,
+            timeout: 60000
+          }
