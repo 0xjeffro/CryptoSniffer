@@ -44,13 +44,7 @@ doctl serverless deploy project-name --remote-build
 
 ### dexscreener chains
 
-parameters
-
-```
-{}
-```
-
-environment variables:
+parameters:
 
 - mongoURI: mongoDB URI
 - msgBotAPI: API link of msgBot
